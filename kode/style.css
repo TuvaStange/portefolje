@@ -8,8 +8,8 @@ html, body {
 }
 div {
     padding: auto;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 div.background-top {
     background-color: #BB7E8C;
@@ -39,10 +39,11 @@ div.header img {
     float: left;
 }
 div.information {
-    padding-top: 16%;
+    padding-top: 15%;
 }
 div.information h1 {
     font-size: 45px;
+    margin: 0;
 }
 div.information p {
     padding-right: 50%;
@@ -52,10 +53,11 @@ div.information a {
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     float: right;
     text-decoration: none;
+    margin-left: 15px;
 }
 div.information-more {
     padding-top: 24%;
@@ -65,10 +67,11 @@ div.information-more a {
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     float: right;
     text-decoration: none;
+    margin-left: 15px;
 }
 div.information-more h2 {
     text-align: left;
@@ -83,7 +86,7 @@ div.information-page {
     text-align: center;
 }
 div.information-page h3 {
-    font-size: 40px;
+    font-size: 45px;
 }
 div.information-page p {
     padding-left: 10%;
