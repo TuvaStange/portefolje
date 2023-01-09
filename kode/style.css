@@ -71,7 +71,7 @@ div.information-more a {
     text-decoration: none;
 }
 div.information-more h2 {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
 }
 div.information-more p {
@@ -79,6 +79,7 @@ div.information-more p {
 }
 div.information-page {
     padding-top: 25%;
+    padding-bottom: 23%;
     text-align: center;
 }
 div.information-page h3 {
@@ -87,7 +88,46 @@ div.information-page h3 {
 div.information-page p {
     padding-left: 10%;
     padding-right: 10%;
+    font-size: 25px;
 }
 div.information-page button {
     float: right;
+}
+div.background-mid {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+div.background-mid h3{
+    text-align: center;
+    color: #555555;
+    font-size: 50px;
+    padding-bottom: 5%;
+}
+div.images {
+    display: flex;
+    justify-content: center;
+}
+div.images img {
+    text-align: center;
+    background-color: #e5e7eb81;
+    color: #E5E7EB;
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    text-decoration: none;
+}
+div.background-bottom {
+    background-color: #1C1C1C;
+    margin: 0%;
+    color: #E5E7EB;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+div.background-bottom h4 {
+    font-size: 30px;
+}
+div.background-bottom p {
+    font-size: 20px;
 }
