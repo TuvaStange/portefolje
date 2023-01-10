@@ -11,6 +11,10 @@ div {
     margin-left: 11%;
     margin-right: 11%;
 }
+div.background {
+    background-color: #BB7E8C;
+    margin: 0%;
+}
 div.background-top {
     background-color: #BB7E8C;
     margin: 0%;
@@ -21,6 +25,8 @@ div.background-top {
 }
 div.header {
     font-size: 25px;
+    background-color: #BB7E8C;
+    height: 20vh;
 }
 div.header a {
     display: inline;
@@ -39,7 +45,8 @@ div.header img {
     float: left;
 }
 div.information {
-    padding-top: 15%;
+    padding-top: 5%;
+    height: 75vh;
 }
 div.information h1 {
     font-size: 45px;
@@ -53,22 +60,22 @@ div.information a {
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 500px;
-    height: 350px;
+    width: 60vh;
+    height: 40vh;
     float: right;
     text-decoration: none;
     margin-left: 15px;
 }
 div.information-more {
-    padding-top: 24%;
+    height: 75vh;
 }
 div.information-more a {
     display: grid;
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 500px;
-    height: 350px;
+    width: 60vh;
+    height: 40vh;
     float: right;
     text-decoration: none;
     margin-left: 15px;
@@ -81,8 +88,7 @@ div.information-more p {
     padding-right: 50%;
 }
 div.information-page {
-    padding-top: 25%;
-    padding-bottom: 23%;
+    height: 50vh;
     text-align: center;
 }
 div.information-page h3 {
@@ -94,18 +100,24 @@ div.information-page p {
     font-size: 25px;
 }
 div.information-page button {
-    float: right;
+    background-color: #E5E7EB;
+    color: #555555;
+    border: 0;
+    width: auto;
+    float: center;
+    font-size: 45px;
+    margin: 10px;
 }
 div.background-mid {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     margin: 0;
+    background-color: #E5E7EB;
+    color: #555555;
 }
 div.background-mid h3{
     text-align: center;
-    color: #555555;
     font-size: 50px;
-    padding-bottom: 5%;
+    padding-top: 5%;
 }
 div.images {
     display: flex;
@@ -125,12 +137,18 @@ div.background-bottom {
     margin: 0%;
     color: #E5E7EB;
     padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
+    padding-bottom: 6%;
 }
 div.background-bottom h4 {
     font-size: 30px;
+    text-align: center;
 }
 div.background-bottom p {
     font-size: 20px;
+    text-align: center;
+}
+div.background-bottom a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-weight: bold;
 }
