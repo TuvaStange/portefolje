@@ -26,7 +26,7 @@ div.background-top {
 div.header {
     font-size: 25px;
     background-color: #BB7E8C;
-    height: 20vh;
+    height: 20px;
 }
 div.header a {
     display: inline;
@@ -41,12 +41,12 @@ div.header a:hover {
     text-decoration: underline;
 }
 div.header img {
-    padding-top: 15px;
+    margin-top: 15px;
     float: left;
 }
 div.information {
-    padding-top: 5%;
-    height: 75vh;
+    padding-top: 13%;
+    height: 100vh;
 }
 div.information h1 {
     font-size: 45px;
@@ -54,28 +54,29 @@ div.information h1 {
 }
 div.information p {
     padding-right: 50%;
+    font-size: 23px;
 }
 div.information a {
     display: grid;
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 60vh;
-    height: 40vh;
+    width: 70vh;
+    height: 50vh;
     float: right;
     text-decoration: none;
     margin-left: 15px;
 }
 div.information-more {
-    height: 75vh;
+    height: 100vh;
 }
 div.information-more a {
     display: grid;
     text-align: center;
     background-color: #e5e7eb81;
     color: #E5E7EB;
-    width: 60vh;
-    height: 40vh;
+    width: 70vh;
+    height: 50vh;
     float: right;
     text-decoration: none;
     margin-left: 15px;
@@ -88,7 +89,7 @@ div.information-more p {
     padding-right: 50%;
 }
 div.information-page {
-    height: 50vh;
+    height: 100vh;
     text-align: center;
 }
 div.information-page h3 {
@@ -102,11 +103,19 @@ div.information-page p {
 div.information-page button {
     background-color: #E5E7EB;
     color: #555555;
-    border: 0;
-    width: auto;
-    float: center;
-    font-size: 45px;
-    margin: 10px;
+    border: 2px solid #E5E7EB;
+    width: 150px;
+    height: 50px;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+div.information-page button:hover {
+    background-color: #BB7E8C;
+    color: #E5E7EB;
 }
 div.background-mid {
     padding-bottom: 7%;
@@ -136,11 +145,11 @@ div.background-bottom {
     background-color: #1C1C1C;
     margin: 0%;
     color: #E5E7EB;
-    padding-top: 5%;
-    padding-bottom: 6%;
+    padding-top: 4%;
+    padding-bottom: 5%;
 }
 div.background-bottom h4 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 div.background-bottom p {
@@ -151,4 +160,7 @@ div.background-bottom a {
     color: #E5E7EB;
     text-decoration: none;
     font-weight: bold;
+}
+div.background-bottom a:hover {
+    text-decoration: underline;
 }
