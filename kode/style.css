@@ -7,7 +7,6 @@ html, body {
     padding: 0;
 }
 div {
-    padding: auto;
     margin-left: 11%;
     margin-right: 11%;
 }
@@ -18,13 +17,12 @@ div.background {
 div.background-top {
     background-color: #BB7E8C;
     margin: 0%;
-    padding-bottom: 5%;
     padding-top: 1%;
     color: #EEF0F2;
     font-size: 20px;
 }
 div.header {
-    font-size: 25px;
+    font-size: 30px;
     background-color: #BB7E8C;
     height: 20px;
 }
@@ -49,12 +47,12 @@ div.information {
     height: 100vh;
 }
 div.information h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin: 0;
 }
 div.information p {
     padding-right: 50%;
-    font-size: 23px;
+    font-size: 28px;
 }
 div.information a {
     display: grid;
@@ -83,13 +81,14 @@ div.information-more a {
 }
 div.information-more h2 {
     text-align: left;
-    font-size: 40px;
+    font-size: 45px;
 }
 div.information-more p {
     padding-right: 50%;
+    font-size: 26px;
 }
 div.information-page {
-    height: 100vh;
+    height: 65vh;
     text-align: center;
 }
 div.information-page h3 {
@@ -98,7 +97,8 @@ div.information-page h3 {
 div.information-page p {
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 25px;
+    font-size: 27px;
+    padding-bottom: 20px;
 }
 div.information-page button {
     background-color: #E5E7EB;
