@@ -47,6 +47,7 @@ div.information {
     height: 100vh;
 }
 div.information h1 {
+    padding-top: 5%;
     font-size: 55px;
     margin: 0;
 }
@@ -57,7 +58,7 @@ div.information p {
 div.information a {
     display: grid;
     text-align: center;
-    background-color: #e5e7eb81;
+    background-color: #acacb0;
     color: #E5E7EB;
     width: 70vh;
     height: 50vh;
@@ -67,19 +68,25 @@ div.information a {
 }
 div.information-more {
     height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+div.img-container {
+    display: flex;
 }
 div.information-more a {
     display: grid;
     text-align: center;
-    background-color: #e5e7eb81;
+    background-color: #acacb0;
     color: #E5E7EB;
     width: 70vh;
     height: 50vh;
-    float: right;
     text-decoration: none;
     margin-left: 15px;
 }
 div.information-more h2 {
+    padding-top: 5%;
     text-align: left;
     font-size: 45px;
 }
@@ -88,8 +95,14 @@ div.information-more p {
     font-size: 26px;
 }
 div.information-page {
-    height: 65vh;
+    height: 100vh;
     text-align: center;
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 div.information-page h3 {
     font-size: 45px;
@@ -99,6 +112,9 @@ div.information-page p {
     padding-right: 10%;
     font-size: 27px;
     padding-bottom: 20px;
+}
+button-container {
+    display: flex;
 }
 div.information-page button {
     background-color: #E5E7EB;
@@ -127,19 +143,24 @@ div.background-mid h3{
     text-align: center;
     font-size: 50px;
     padding-top: 5%;
+    margin: 0;
 }
 div.images {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
-div.images img {
+div.images a {
     text-align: center;
-    background-color: #e5e7eb81;
+    background-color: #acacb0;
     color: #E5E7EB;
-    width: 300px;
-    height: 200px;
-    margin: 5px;
+    width: 35vh;
+    height: 25vh;
     text-decoration: none;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 div.background-bottom {
     background-color: #1C1C1C;
