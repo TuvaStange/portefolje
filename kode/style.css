@@ -2,46 +2,65 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     background-color: #BB7E8C;
+    width: 100%;
 }
-body {
-    margin: 0 11% 0 11%;
+body { 
+    margin: 0;
     padding: 0;
 }
 div.background {
     background-color: #BB7E8C;
     margin: 0%;
+    
 }
-div.background-top {
+div.navbar {
+    overflow: hidden;
+    top: 0; 
+    position: fixed;
+    width: 100%;
     background-color: #BB7E8C;
-    margin: 0%;
-    padding-top: 1%;
+    padding: 0;
     color: #EEF0F2;
-    font-size: 20px;
+    padding: 0 12% 0 12%;
+    height: auto;
 }
-div.header {
+header {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 30px;
-    background-color: #BB7E8C;
-    height: 20px;
+    padding: 25px, 0;
 }
-div.header a {
-    display: inline;
+header a {
     color: #E5E7EB;
-    float: right;
-    padding: 10px;
-    padding-left: 20px;
-    margin-top: 12px;
     text-decoration: none;
 }
-div.header a:hover {
-    text-decoration: underline;
-}
-div.header img {
-    margin-top: 15px;
+.logo {
+    cursor: pointer;
     float: left;
 }
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+div.background-top {
+    margin: 0%;
+    color: #EEF0F2;
+    font-size: 20px;
+    padding: 0 12% 0 12%;
+}
 div.information {
-    padding-top: 13%;
     height: 100vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 div.information h1 {
     padding-top: 5%;
@@ -49,7 +68,6 @@ div.information h1 {
     margin: 0;
 }
 div.information p {
-    padding-right: 50%;
     font-size: 28px;
 }
 div.information a {
@@ -61,7 +79,7 @@ div.information a {
     height: 50vh;
     float: right;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 17px;
 }
 div.information-more {
     height: 100vh;
@@ -69,13 +87,9 @@ div.information-more {
     display: flex;
     align-items: center;
 }
-div.img-container-mid {
+div.img-container {
     display: flex;
 }
-div.text-container-mid {
-    
-}
-
 div.information-more a {
     display: grid;
     text-align: center;
@@ -84,10 +98,9 @@ div.information-more a {
     width: 70vh;
     height: 50vh;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 17px;
 }
 div.information-more h2 {
-    padding-top: 5%;
     text-align: left;
     font-size: 45px;
 }
@@ -97,7 +110,7 @@ div.information-more p {
 div.information-page {
     height: 100vh;
     text-align: center;
-    width: 100vh;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -127,7 +140,8 @@ div.information-page button {
     text-align: center;
     display: inline-block;
     border-radius: 10px;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 div.information-page button:hover {
     background-color: #BB7E8C;
@@ -135,6 +149,7 @@ div.information-page button:hover {
 }
 div.background-mid {
     padding-bottom: 7%;
+    padding: 0;
     margin: 0;
     background-color: #E5E7EB;
     color: #555555;
@@ -150,6 +165,7 @@ div.images {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding-bottom: 70px;
 }
 div.images a {
     text-align: center;
