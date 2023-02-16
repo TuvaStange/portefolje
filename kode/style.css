@@ -202,3 +202,120 @@ div.background-bottom a {
 div.background-bottom a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 1080px) {
+    div {
+        padding: 0;
+        margin: 0;
+    }
+    div.navbar {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .logo {
+        padding-right: 25px;
+    }
+    .nav-links {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links li {
+        padding-left: 5px;
+        padding-right: 6px;
+    }
+    div.background-top {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    div.information {
+        justify-content: center;
+        flex-direction: column;
+    }
+    div.information h1 {
+        font-size: 35px;
+    }
+    div.information p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    div.information a {
+        width: 40vh;
+        height: 25vh;
+        float: right;
+        text-decoration: none;
+        margin: 0;
+    }
+    div.information-more {
+        justify-content: center;
+        flex-direction: column;
+    }
+    div.information-more a {
+        width: 40vh;
+        height: 25vh;
+        text-decoration: none;
+        margin: 0;
+    }
+    div.information-more h2 {
+        font-size: 30px;
+    }
+    div.information-more p {
+        font-size: 20px;
+    }
+    div.information-page h3 {
+        font-size: 30px;
+    }
+    div.information-page p {
+        padding: 0;
+        font-size: 20px;
+    }
+    div.information-page button {
+        width: 100px;
+        height: 25px;
+        font-size: 20px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    div.background-mid h3{
+        font-size: 35px;
+        padding-top: 6%;
+        padding-bottom: 4%;
+        margin: 0;
+    }
+    div.images {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    div.images a {
+        width: 35vh;
+        height: 25vh;
+        margin: 5px;
+    }
+    div.background-bottom {
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    div.background-bottom h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+    div.background-bottom p {
+        font-size: 15px;
+        text-align: center;
+    }
+    div.background-bottom a {
+        color: #E5E7EB;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    div.background-bottom a:hover {
+        text-decoration: underline;
+    }
+}
