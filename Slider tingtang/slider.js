@@ -1,6 +1,6 @@
 const WholePageSlider = class {
   constructor (options = {}) {
-    this.container = options.containerId ? document.getElementById(options.containerId) : document.body
+    this.container = options.background-top ? document.getElementById(options.containerId) : document.body
     this.sections = options.sectionClass ? document.getElementsByClassName(options.sectionClass) : document.getElementsByTagName('section')
     this.pageClass = options.pageClass ? options.pageClass : 'page'
 

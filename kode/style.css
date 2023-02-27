@@ -11,7 +11,12 @@ body {
 div.background {
     background-color: #BB7E8C;
     margin: 0%;
-    
+    scroll-snap-align: start;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-margin-block: 0;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 div.navbar {
     overflow: hidden;
@@ -55,12 +60,15 @@ div.background-top {
     color: #EEF0F2;
     font-size: 20px;
     padding: 0 12% 0 12%;
+    
 }
 div.information {
     height: 100vh;
     flex-direction: row;
     display: flex;
     align-items: center;
+    aspect-ratio: auto;
+    scroll-snap-align: start none;
 }
 div.information h1 {
     padding-top: 5%;
@@ -86,6 +94,8 @@ div.information-more {
     flex-direction: row;
     display: flex;
     align-items: center;
+    aspect-ratio: auto;
+    scroll-snap-align: start none;
 }
 div.img-container {
     display: flex;
@@ -116,6 +126,8 @@ div.information-page {
     flex-direction: column;
     display: flex;
     justify-content: center;
+    aspect-ratio: auto;
+    scroll-snap-align: start none;
 }
 div.information-page h3 {
     font-size: 45px;
@@ -153,6 +165,8 @@ div.background-mid {
     margin: 0;
     background-color: #E5E7EB;
     color: #555555;
+    aspect-ratio: auto;
+    scroll-snap-align: start none;
 }
 div.background-mid h3{
     text-align: center;
@@ -160,6 +174,7 @@ div.background-mid h3{
     padding-top: 6%;
     padding-bottom: 4%;
     margin: 0;
+    scroll-snap-align: start none;
 }
 div.images {
     display: flex;
@@ -185,6 +200,8 @@ div.background-bottom {
     color: #E5E7EB;
     padding-top: 4%;
     padding-bottom: 5%;
+    aspect-ratio: auto;
+    scroll-snap-align: start none;
 }
 div.background-bottom h4 {
     font-size: 35px;
@@ -252,6 +269,7 @@ div.background-bottom a:hover {
         float: right;
         text-decoration: none;
         margin: 0;
+        font-size: 15px;
     }
     div.information-more {
         justify-content: center;
@@ -262,6 +280,7 @@ div.background-bottom a:hover {
         height: 25vh;
         text-decoration: none;
         margin: 0;
+        font-size: 15px;
     }
     div.information-more h2 {
         font-size: 30px;
@@ -297,6 +316,7 @@ div.background-bottom a:hover {
         width: 35vh;
         height: 25vh;
         margin: 5px;
+        font-size: 15px;
     }
     div.background-bottom {
         padding-top: 4%;
