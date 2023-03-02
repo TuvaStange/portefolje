@@ -16,7 +16,14 @@ div.background {
     scroll-snap-type: y mandatory;
     scroll-margin-block: 0;
     height: 100vh;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+div.background::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+    height: 0px;
 }
 div.navbar {
     overflow: hidden;
