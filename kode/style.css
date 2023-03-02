@@ -104,8 +104,29 @@ div.information-more {
     aspect-ratio: auto;
     scroll-snap-align: start none;
 }
-div.img-container {
+.img-container {
     display: flex;
+}
+.carousel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    position: relative;
+}
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.slide > img {
+    display: block;
+    object-fit: cover;
+    object-position: right;
+}
+.slide[data-active] {
+    opacity: 1;
 }
 div.information-more a {
     display: grid;

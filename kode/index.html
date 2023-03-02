@@ -11,12 +11,12 @@
     <div class="background">
         <div class="navbar">
             <header>
-                <img class="logo" src="#" alt="logo">
+                <a href="#background-top"><img class="logo" src="#" alt="logo"></a>
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">This site</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#information-more">About me</a></li>
+                        <li><a href="#information-page">This site</a></li>
+                        <li><a href="#background-bottom">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="information-more">
+            <div class="information-more" id="information-more">
                 <div class="text-container">
                 <h2>More about me</h2>
                 <p>Praesent et fringilla magna. Duis id metus libero. Ut a fringilla nulla. 
@@ -45,13 +45,27 @@
                     pretium ex neque eget arcu. Nullam molestie ex in tincidunt efficitur. Sed 
                     elementum facilisis ex, sed vestibulum elit blandit non. </p>
                 </div>
-                <div class="img-container-mid">
-                    <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
-                </div>    
+                <section class="img-container-mid">
+                    <div class="carousel">
+                        <button class="carouselbutton prev">&#8656;</button>
+                        <button class="carouselbutton next">&#8658;</button>
+                        <ul>
+                            <li class="slide" data-active>
+                                <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
+                            </li>
+                            <li class="slide">
+                                <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
+                            </li>
+                            <li class="slide">
+                                <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
             
 
-            <div class="information-page">
+            <div class="information-page" id="information-page">
                 <div class="text-container">
                     <h3>On this page</h3>
                     <p>In a imperdiet risus, id sodales metus. Aliquam rutrum eu leo sit amet 
@@ -61,16 +75,16 @@
                     aliquet eros, a vulputate risus pharetra at. </p>
                 </div>
                 <div class="button-container">
-                     <button>Medie</button>
-                    <button>IT</button>
-                    <button>Fritid</button>
+                    <a href="#column-media"><button>Media</button></a>
+                    <a href="#column-it"><button>IT</button></a>
+                    <a href="#column-other"><button>Other</button></a>
                 </div>
                
             </div>
         </div>
         
         <div class="background-mid">
-            <div class="column-media">
+            <div class="column-media" id="column-media">
                 <h3>Media</h3>
                 <div class="images">
                     <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
@@ -84,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="column-it">
+            <div class="column-it" id="column-it">
                 <h3>IT</h3>
                 <div class="images">
                     <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
@@ -93,8 +107,8 @@
                 </div>
             </div>
 
-            <div class="column-fritid">
-                <h3>Fritid</h3>
+            <div class="column-other" id="column-other">
+                <h3>Other projects</h3>
                 <div class="images">
                     <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
                     <a href="#"><img src="#" alt="">This is a placeholder for an image</a>
@@ -104,7 +118,7 @@
 
         </div>
 
-        <div class="background-bottom">
+        <div class="background-bottom" id="background-bottom">
             <div class="contact">
                 <h4>Contact</h4>
                 <p>+47 954 26 056</p>
