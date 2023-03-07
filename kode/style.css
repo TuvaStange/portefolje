@@ -143,7 +143,7 @@ div.information-more {
     margin-right: 40px;
 }
 .manual-btn:hover {
-    background-color: #BB7E8C;
+    background-color: #FFFFFF;
 }
 #radio1:checked ~ .first {
     margin-left: 0;
@@ -153,6 +153,31 @@ div.information-more {
 }
 #radio3:checked ~ .first {
     margin-left: -40.45%;
+}
+.navigation-auto {
+    width: 70vh;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div {
+    border: 2px solid #BB7E8C;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #BB7E8C;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #BB7E8C;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #BB7E8C;
 }
 div.information-more a {
     display: grid;
@@ -170,6 +195,55 @@ div.information-more h2 {
 }
 div.information-more p {
     font-size: 26px;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1600px;
+    height: 90vh;
+    max-height: 600px;
+    border-radius: 15px;
+    background: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    transition: 1s;
+}
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #E5E7EB;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+.close.btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: pointer;
+}
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 div.information-page {
     height: 100vh;
@@ -191,9 +265,6 @@ div.information-page p {
     padding-right: 10%;
     font-size: 27px;
     padding-bottom: 20px;
-}
-button-container {
-    display: flex;
 }
 div.information-page button {
     background-color: #E5E7EB;
