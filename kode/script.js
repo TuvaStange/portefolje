@@ -7,9 +7,10 @@ setInterval(function(){
   }
 }, 5000);
 
-const images = [...document.querySelectorAll('.img-container-mid .slider .slide img')];
+const images = [...document.querySelectorAll('.img-container-mid .popup')];
 
 const popup = document.querySelector('.popup');
+
 const closeBtn = document.querySelector('.close-btn');
 const imageName = document.querySelector('.image-name');
 const largeImage = document.querySelector('.large-image');
@@ -23,6 +24,7 @@ images.forEach((item, i) => {
   item.addEventListener('click', () => {
     updateImage(i);
     popup.classList.toggle('active');
+    console.log("hei");
   })
 })
 

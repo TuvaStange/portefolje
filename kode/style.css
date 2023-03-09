@@ -108,7 +108,7 @@ div.information-more {
     width: 70vh;
     height: 50vh;
     overflow: hidden;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .slides {
     width: 500%;
@@ -201,7 +201,7 @@ div.information-more p {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale (0);
+    /* transform: translate(-50%, -50%) scale (0); */
     width: 80%;
     max-width: 80%;
     height: 90vh;
@@ -246,7 +246,7 @@ div.information-more p {
     opacity: 0;
     display: none;
 }
-.close.btn {
+.close-btn {
     opacity: 0;
     display: none;
     position: absolute;
