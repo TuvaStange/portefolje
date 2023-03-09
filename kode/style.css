@@ -94,7 +94,7 @@ div.information a {
     height: 50vh;
     float: right;
     text-decoration: none;
-    margin-left: 17px;
+    
 }
 div.information-more {
     height: 100vh;
@@ -123,7 +123,7 @@ div.information-more {
     transition: 2s;
 }
 .slide img {
-    width: 70vh;
+    width: auto;
     height: 50vh;
 }
 .navigation-manual {
@@ -149,10 +149,10 @@ div.information-more {
     margin-left: 0;
 }
 #radio2:checked ~ .first {
-    margin-left: -20.45%;
+    margin-left: -20%;
 }
 #radio3:checked ~ .first {
-    margin-left: -40.45%;
+    margin-left: -40%;
 }
 .navigation-auto {
     width: 70vh;
@@ -186,8 +186,9 @@ div.information-more a {
     color: #E5E7EB;
     width: 70vh;
     height: 50vh;
+    overflow: hidden;
     text-decoration: none;
-    margin-left: 17px;
+
 }
 div.information-more h2 {
     text-align: left;
@@ -200,19 +201,34 @@ div.information-more p {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale (0);
     width: 80%;
-    max-width: 1600px;
+    max-width: 80%;
     height: 90vh;
-    max-height: 600px;
+    max-height: 80%;
     border-radius: 15px;
     background: #E5E7EB;
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 5;
     overflow: hidden;
     transition: 1s;
+    opacity: 0;
+    display: none;
+}
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    display: flex;
+}
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn {
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 1s;
 }
 .top-bar {
     position: absolute;
@@ -226,7 +242,13 @@ div.information-more p {
     line-height: 50px;
     font-weight: 300;
 }
+.image-name {
+    opacity: 0;
+    display: none;
+}
 .close.btn {
+    opacity: 0;
+    display: none;
     position: absolute;
     top: 15px;
     right: 20px;
@@ -237,6 +259,8 @@ div.information-more p {
     cursor: pointer;
 }
 .arrow-btn {
+    opacity: 0;
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -244,6 +268,34 @@ div.information-more p {
     border: none;
     background: none;
     cursor: pointer;
+}
+.left-arrow {
+    left: 10px;
+}
+right-arrow {
+    right: 10px;
+    transform: translate(-50%);
+}
+.arrow-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.index {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    display: none;
+}
+.large-image {
+    margin-top: 5%;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    display: none;
 }
 div.information-page {
     height: 100vh;
@@ -344,6 +396,8 @@ div.background-bottom a {
 div.background-bottom a:hover {
     text-decoration: underline;
 }
+
+
 
 @media only screen and (max-width: 1080px) {
     div {
