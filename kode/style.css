@@ -179,15 +179,13 @@ div.information-more {
 #radio3:checked ~ .navigation-auto .auto-btn3 {
     background: #BB7E8C;
 }
-.test1 {
-    display: grid;
-    text-align: center;
-    background-color: #acacb0;
-    color: #E5E7EB;
+.img-click {    
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     width: 70vh;
     height: 50vh;
-    overflow: hidden;
-    text-decoration: none;
+    border: 0;
 }
 div.information-more h2 {
     text-align: left;
@@ -198,8 +196,8 @@ div.information-more p {
 }
 .popup {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     transform: translate(-50%, -50%) scale (0);
     width: 80%;
     max-width: 80%;
@@ -214,20 +212,7 @@ div.information-more p {
     transition: 1s;
     display: none;
 }
-.popup.active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    display: flex;
-}
-.popup.active .close-btn,
-.popup.active .image-name,
-.popup.active .index,
-.popup.active .large-image,
-.popup.active .arrow-btn {
-    opacity: 1;
-    transition: opacity .5s;
-    transition-delay: 1s;
-}
+
 .top-bar {
     position: absolute;
     top: 0;
@@ -240,10 +225,7 @@ div.information-more p {
     line-height: 50px;
     font-weight: 300;
 }
-.image-name {
-    opacity: 0;
-    display: none;
-}
+
 .close-btn {
     opacity: 1;
     display: block;
@@ -257,8 +239,6 @@ div.information-more p {
     cursor: pointer;
 }
 .arrow-btn {
-    opacity: 0;
-    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -270,7 +250,7 @@ div.information-more p {
 .left-arrow {
     left: 10px;
 }
-right-arrow {
+.right-arrow {
     right: 10px;
     transform: translate(-50%);
 }
@@ -287,13 +267,20 @@ right-arrow {
     opacity: 0;
     display: none;
 }
+.img-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.img-text {
+    margin-left: 5%;
+    color: #000;
+}
 .large-image {
-    margin-top: 5%;
-    width: 50%;
-    height: auto;
+    margin-right: 5%;
+    width: 45%;
     object-fit: contain;
-    opacity: 0;
-    display: none;
+    overflow: hidden;
 }
 div.information-page {
     height: 100vh;
