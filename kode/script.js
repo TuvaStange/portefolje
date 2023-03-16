@@ -39,4 +39,5 @@ rightArrow.addEventListener('click', () => {
 function visibleModal() {
   document.getElementById("popup").style.display = "block";
   document.getElementById("close-btn").style.display = "block";
+  document.getElementById("popup-box").style.display = "block";
 }
