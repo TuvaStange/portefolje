@@ -179,7 +179,7 @@ div.information-more {
 #radio3:checked ~ .navigation-auto .auto-btn3 {
     background: #BB7E8C;
 }
-div.information-more a {
+.test1 {
     display: grid;
     text-align: center;
     background-color: #acacb0;
@@ -188,7 +188,6 @@ div.information-more a {
     height: 50vh;
     overflow: hidden;
     text-decoration: none;
-
 }
 div.information-more h2 {
     text-align: left;
@@ -198,10 +197,10 @@ div.information-more p {
     font-size: 26px;
 }
 .popup {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%) scale (0); */
+    transform: translate(-50%, -50%) scale (0);
     width: 80%;
     max-width: 80%;
     height: 90vh;
@@ -213,7 +212,6 @@ div.information-more p {
     z-index: 5;
     overflow: hidden;
     transition: 1s;
-    opacity: 0;
     display: none;
 }
 .popup.active {
@@ -247,8 +245,8 @@ div.information-more p {
     display: none;
 }
 .close-btn {
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: block;
     position: absolute;
     top: 15px;
     right: 20px;

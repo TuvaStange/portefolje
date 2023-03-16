@@ -23,7 +23,7 @@ let index = 0;
 images.forEach((item, i) => {
   item.addEventListener('click', () => {
     updateImage(i);
-    popup.classList.toggle('active');
+    popup.classList.toggle('popup');
     console.log("hei");
   })
 })
@@ -34,10 +34,12 @@ const updateImage = (i) => {
   imageName.innerHTML = path;
   imageIndex.innerHTML = '0${i+1}';
   index = i;
+  
 }
 
 closeBtn.addEventListener('click', () => {
-  popup.classList.toggle('active');
+  popup.classList.toggle('popup');
+  document.getElementById("popup").style.display = "none";
 })
 
 leftArrow.addEventListener('click', () => {
@@ -50,3 +52,8 @@ rightArrow.addEventListener('click', () => {
     updateImage(index + 1);
   }
 })
+
+function visibleModal() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("close-btn").style.display = "block";
+}
